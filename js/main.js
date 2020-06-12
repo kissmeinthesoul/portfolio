@@ -50,3 +50,12 @@ function toggle2() {
 	var popup2 = document.getElementById('popup2');
 	popup2.classList.toggle('active');
 }
+
+$('.swot-slider').slick({
+  dots: false,
+  infinite: false,
+  speed: 1000,
+  autoplay: false,
+  slidesToShow: 1,
+  slidesToScroll: 1
+});
