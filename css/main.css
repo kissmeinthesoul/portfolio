@@ -70,10 +70,6 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ----------------------Slider------------------------ */
 
-html {
-  overflow-x: hidden;
-}
-
 .header {
   position: relative;
   height: 200vh;
@@ -180,6 +176,19 @@ html {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 .profile {
     position: absolute;
     width: 150px;
@@ -216,7 +225,7 @@ html {
   height: 100vh;
 }
 
-.video-bg b {
+.main-sent {
   position: absolute;
   font-size: 70px;
   color: #fff;
@@ -225,4 +234,145 @@ html {
   margin-right: -50%;
   transform: translate(-50%, -50%);
   z-index: 1;
+  transition: .5s;
+}
+
+.about {
+  display: flex;
+}
+
+.about > div {
+  width: 50vw;
+}
+
+.about__title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 10%;
+}
+
+.about__title h1 {
+  font-size: 36px;
+  font-weight: 700;
+  transition: .5s ease;
+}
+
+.about__title:hover h1 {
+  padding-left: 5%;
+  border-left: 3px solid #000;
+}
+
+.about__block {
+  display: flex;
+  flex-direction: column;
+}
+
+.about__block__item {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  padding: 7%;
+}
+
+.about__block__item {
+  background: #000;
+}
+
+.block__item__case {
+  display: inherit;
+  flex-direction: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  margin: 3% 0;
+}
+
+.about__block__item > h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 5%;
+}
+
+.block__item__case b {
+  margin-bottom: 5%;
+}
+
+
+
+.cv {
+  background: #181818;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cv-items {
+  justify-content: space-between;
+  display: inherit;
+}
+
+.cv img {
+  width: 49%;
+  object-fit: cover;
+  transition: .7s;
+}
+
+.cv img:hover {
+  width: 50%;
+}
+
+.cv h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 5%;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.cl {
+  justify-content: center;
+}
+
+.cl img {
+  width: 80%;
+}
+
+.cl img:hover {
+  width: 85%;
+}
+
+
+
+
+
+
+
+.vt {
+  background: #76423E;
+  color: #fff
+}
+
+.vt > b {
+  font-size: 28px;
+  margin: 5% 0 3% 0;
+}
+
+.video-script {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 2% 0;
+}
+
+.video-script__block b {
+  font-size: 18px;
+}
+
+.video-script p {
+  margin: 1% 0;
+  font-size: 16px;
+  line-height: 1.7;
 }
